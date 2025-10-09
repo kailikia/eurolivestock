@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>EuroLivestock — Cleaning & Disinfection</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    :root{
+      --accent:#b3572b;    /* earthy accent */
+      --muted:#6b6b6b;
+      --card-bg: rgba(255,255,255,0.92);
+    }
+
+    body{
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      color: #222;
+      background: #fff;
+    }
+
+    /* HERO */
+    .hero {
+      min-height: 62vh;
+      display: flex;
+      align-items: center;
+      color: white;
+      position: relative;
+      background: linear-gradient(rgba(0,0,0,0.36), rgba(0,0,0,0.36)), url('2149211716.jpg') center/cover no-repeat;
+    }
+    .hero .overlay-card{
+      background: rgba(255,255,255,0.92);
+      color: #0b0b0b;
+      border-radius: .5rem;
+      padding: 1.25rem;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.18);
+    }
+
+    /* logo in nav */
+    .navbar-brand img{
+      height: 42px;
+      width: auto;
+    }
+
+    /* product category boxes */
+    .product-card {
+      background: var(--card-bg);
+      border-left: 4px solid var(--accent);
+      padding: 1rem;
+      border-radius: .5rem;
+      margin-bottom: 1rem;
+    }
+
+    footer {
+      background: #0f1720;
+      color: #cbd5e1;
+      padding: 2rem 0;
+    }
+
+    @media (min-width: 992px){
+      .hero { min-height: 72vh; }
+      .hero .overlay-card { max-width: 640px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="navbar navbar-expand-lg bg-white shadow-sm">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="logo.png" alt="EuroLivestock logo">
+        <span class="ms-2 fw-semibold" style="color:var(--accent)">EuroLivestock</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMain">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="container">
+      <div class="overlay-card">
+        <h1 class="display-6 fw-bold">Cleaning & Disinfection — Leave it to us</h1>
+        <p class="mb-3">EuroLivestock provides professional cleaning, disinfection and farm hygiene solutions across Africa — disinfectants, sanitizers, degreasers, vitamins and hatchery fumigation products designed for poultry, hatcheries and slaughterhouse equipment.</p>
+        <a href="#products" class="btn btn-primary" style="background:var(--accent); border: none;">Explore Products</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ABOUT -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <div class="row g-4 align-items-center">
+        <div class="col-lg-6">
+          <h2 class="h4">About EuroLivestock</h2>
+          <p>EuroLivestock focuses on cleaning, disinfection and farm hygiene for poultry, pig and dairy operations. We supply a range of products tailored for farm buildings, hatcheries and slaughterhouses, backed by professional advice and equipment for applying treatments safely and effectively.</p>
+
+          <p><strong>Address:</strong> Godown #8, KHL Business Park, Quarry Rd, Mlolongo — P.O. Box 3498 00200, City Square, Nairobi.</p>
+          <p><strong>Phone:</strong> 0715 111 745 &nbsp; | &nbsp; <strong>Email:</strong> info@eurolivestock.com</p>
+        </div>
+
+        <div class="col-lg-6 text-center">
+          <!-- small image shown in About for context (hero is background) -->
+          <img src="2149211716.jpg" alt="Goat being fed — EuroLivestock" class="img-fluid rounded shadow-sm" style="max-height:320px; object-fit:cover;">
+          <p class="text-muted small mt-2 mb-0">African livestock environments — image for company site.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTS -->
+  <section id="products" class="py-5 bg-light">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2 class="h4 mb-0">Product Categories</h2>
+        <p class="mb-0 text-muted small">Price list snapshot — Jul 2025</p>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="product-card">
+            <h3 class="h6">CAT 01: Disinfectants</h3>
+            <p><strong>Paragon Plus</strong> — Glutaraldehydes & QACs. Used for total disinfection of farm buildings and equipment. Broadly virucidal and bactericidal.</p>
+            <p><strong>Pharmguard</strong> — Broad-spectrum disinfectant for poultry houses, effective against virus, fungi and bacteria; ideal for earth floors and viral outbreaks.</p>
+            <p><strong>Pharmacide</strong> — Specially formulated for poultry hatcheries.</p>
+          </div>
+
+          <div class="product-card">
+            <h3 class="h6">CAT 02: Degreasers</h3>
+            <p><strong>Biogen</strong> — Pre-cleaning agent with strong degreasing power for farm buildings and equipment.</p>
+            <p><strong>Biobac</strong> — Food-grade first-wash degreaser for slaughterhouses.</p>
+          </div>
+
+          <div class="product-card">
+            <h3 class="h6">CAT 03: Sanitizers</h3>
+            <p><strong>Bioacid</strong> — For slaughter equipment & to de-scale poultry drinkers.</p>
+            <p><strong>Biokill</strong> — Food-grade sanitizer for slaughter house equipment.</p>
+            <p><strong>Biosan</strong> — Hand sanitizer.</p>
+            <p><strong>Bioshower</strong> — For poultry house & hatchery shower blocks.</p>
+            <p><strong>Hydrosan</strong> — For cleaning & disinfecting drinker lines.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="product-card">
+            <h3 class="h6">CAT 04: Vitamins</h3>
+            <p><strong>Electrovite Forte</strong> — For breeder & broiler farming to enhance vitality.</p>
+            <p><strong>Electrolytes + Vit C</strong> — Use 2–3 days before slaughter to minimize weight loss.</p>
+            <p><strong>Vitamin B Complex</strong> — Boosts fertility in breeder operations.</p>
+          </div>
+
+          <div class="product-card">
+            <h3 class="h6">CAT 05: Hatchery Fumigation</h3>
+            <p><strong>Triconozol – F</strong> — Against Aspergillus & bacteria — for smoking eggs in fumigation chambers & hatcheries.</p>
+            <p><strong>Triconozol – L</strong> — For fumigating drains and eggs; controls aspergillus and bacteria.</p>
+          </div>
+
+          <div class="product-card">
+            <h3 class="h6">CAT 06: Equipment</h3>
+            <p><strong>LogTag Temperature Readers</strong> — Monitor temperature in poultry farms.</p>
+            <p><strong>LogTag Temperature & Humidity Reader</strong> — Monitors both temperature and humidity.</p>
+            <p><strong>LogTag Cradles</strong> — Connect loggers to PCs for data downloads and analysis.</p>
+            <p><strong>Chauvet Fogging Machine</strong> — For fogging chicken houses & hatcheries.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-4 text-muted small">
+        <p class="mb-1"><strong>Note:</strong> The above summarizes product categories and key items from our supplied price list (Jul 2025). For full price listings, technical datasheets, mixing/application instructions and availability, contact our sales team.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT / FOOTER -->
+  <footer id="contact" class="mt-0">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h5 class="text-white">Contact EuroLivestock</h5>
+          <p class="mb-1">Godown #8, KHL Business Park, Quarry Rd, Mlolongo</p>
+          <p class="mb-1">P.O. Box 3498 00200, City Square, Nairobi</p>
+          <p class="mb-1">Tel: 0715 111 745</p>
+          <p class="mb-0">Email: <a href="mailto:info@eurolivestock.com" style="color:#fff;text-decoration:underline">info@eurolivestock.com</a></p>
+        </div>
+
+        <div class="col-md-6 text-md-end mt-3 mt-md-0">
+          <img src="logo.png" alt="EuroLivestock logo" style="height:48px; filter:brightness(1.2)">
+          <p class="mt-2 small">© EuroLivestock. Cleaning and Disinfection — Leave it to us.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS (optional) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

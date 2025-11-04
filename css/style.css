@@ -3,7 +3,8 @@
     --primary: #348E38;
     --secondary: #525368;
     --light: #E8F5E9;
-    --dark: #0F4229;
+    /* --light: #0000FF; */
+    /* --dark: #0F4229; */
 }
 
 .back-to-top {
@@ -58,11 +59,13 @@ h6,
 .btn {
     transition: .5s;
     font-weight: 500;
+   
 }
 
 .btn-primary,
 .btn-outline-primary:hover {
     color: var(--light);
+    background-color: #056cc4;
 }
 
 .btn-square {

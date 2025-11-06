@@ -34,6 +34,7 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -79,26 +80,31 @@
     <!-- Topbar End -->
 
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top py-0 pe-5">
-        <a href="index.html" class="navbar-brand ps-5 mt-3 me-0">
-            <h2 class="text-primary m-0"><img src="img/eurologo.jpg" style="height: 49px; border-radius: 10px;">
-                EuroLivestock Products</h2>
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-3 px-lg-5">
+        <a href="index.html" class="navbar-brand d-flex align-items-center">
+            <img src="img/eurologo.jpg" alt="EuroLivestock Logo"
+                style="height: 49px; border-radius: 10px; margin-right: 10px;">
+            <h2 class="text-primary m-0 fs-4">EuroLivestock Products</h2>
         </a>
-        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
+
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="index.html" class="nav-item nav-link active">Home</a>
+                <a href="index.html" class="nav-item nav-link">Home</a>
                 <a href="about.html" class="nav-item nav-link">About</a>
-                <a href="services.html" class="nav-item nav-link">Services</a>
+                <a href="services.html" class="nav-item nav-link active">Services</a>
                 <a href="contact.html" class="nav-item nav-link">Contact</a>
             </div>
-            <a href="index.html#quote" class="btn btn-primary py-3 px-lg-4 rounded-0 d-none d-lg-block">Get A Quote<i
-                    class="fa fa-arrow-right ms-3"></i></a>
+            <a href="index.html#quote" class="btn btn-primary py-3 px-lg-4 rounded-0 d-none d-lg-block">
+                Get A Quote <i class="fa fa-arrow-right ms-3"></i>
+            </a>
         </div>
     </nav>
     <!-- Navbar End -->
+
 
     <!-- Carousel Start -->
     <div class="container-fluid p-0 wow fadeIn" style="max-height: 450px;" data-wow-delay="0.1s">
@@ -113,7 +119,12 @@
                                 <div class="col-lg-8">
                                     <h1 class="display-3 text-white mb-5 animated slideInDown">Cleaning & Disinfection —
                                         Leave it to us</h1>
-                                    <a href="services.html" class="btn btn-primary py-sm-3 px-sm-4">Explore More</a>
+                                    <a href="#services"
+                                        class="btn btn-primary py-3 px-4 align-items-center justify-content-center">
+                                        Explore More
+                                        <i class="fa fa-arrow-down ms-2 bounce-arrow"></i>
+                                    </a>
+
                                 </div>
                             </div>
                         </div>
@@ -192,7 +203,7 @@
                         hygiene products designed to maintain clean, disease-free, and productive farm environments.</p>
 
 
-                    <a class="btn btn-primary py-3 px-4" href="">Explore More</a>
+                    <a class="btn btn-primary py-3 px-4" href="services.html">Explore Services</a>
                 </div>
                 <div class="col-lg-3 col-md-12 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="row g-5">
@@ -259,7 +270,7 @@
                         farm hygiene solutions backed by expert support, ensuring cleaner farms and healthier livestock
                         across East Africa.</p>
 
-                    <a class="btn btn-primary py-3 px-4" href="">Explore More</a>
+                    <a class="btn btn-primary py-3 px-4" href="services.html">Explore Services</a>
                 </div>
                 <div class="col-lg-6">
                     <div class="row g-4 align-items-center">
@@ -304,8 +315,8 @@
     <!-- Features End -->
 
     <!-- Service Start -->
-    <div class="container-xxl py-5">
-        <div class="container">
+    <div class="container-xxl py-5" id="services">
+        <div class="container" >
             <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
                 <p class="fs-5 fw-bold text-primary">Our Services</p>
                 <h1 class="display-5 mb-5">Services That We Offer</h1>
@@ -323,7 +334,7 @@
                             <h4 class="mb-3">Farm Disinfection</h4>
                             <p class="mb-4">Comprehensive cleaning and disinfection services for poultry houses, dairy
                                 units, and livestock farms to prevent disease and promote animal health.</p>
-                            <a class="btn btn-sm" href=""><i class="fa fa-plus text-primary me-2"></i>Read More</a>
+                            
 
                         </div>
                     </div>
@@ -340,7 +351,7 @@
                             <h4 class="mb-3">Sanitization Solutions</h4>
                             <p class="mb-4">High-quality sanitizers and cleaning agents formulated to maintain hygiene
                                 standards in hatcheries, slaughterhouses, and farm facilities.</p>
-                            <a class="btn btn-sm" href=""><i class="fa fa-plus text-primary me-2"></i>Read More</a>
+                            
 
                         </div>
                     </div>
@@ -357,7 +368,7 @@
                             <h4 class="mb-3">Degreasing & Equipment Cleaning</h4>
                             <p class="mb-4">Powerful degreasers and cleaning products designed for farm equipment,
                                 hatcheries, and slaughterhouses to ensure optimal hygiene and safety.</p>
-                            <a class="btn btn-sm" href=""><i class="fa fa-plus text-primary me-2"></i>Read More</a>
+                            
                         </div>
                     </div>
                 </div>
@@ -373,7 +384,7 @@
                             <h4 class="mb-3">Hatchery Fumigation</h4>
                             <p class="mb-4">Specialized fumigation products and services to control bacteria and fungi
                                 in hatcheries, ensuring a clean and safe environment for chicks.</p>
-                            <a class="btn btn-sm" href=""><i class="fa fa-plus text-primary me-2"></i>Read More</a>
+                            
 
                         </div>
                     </div>
@@ -390,7 +401,7 @@
                             <h4 class="mb-3">Vitamin & Nutrient</h4>
                             <p class="mb-4">Essential vitamins and electrolytes formulated to enhance animal vitality,
                                 fertility, and overall farm productivity.</p>
-                            <a class="btn btn-sm" href=""><i class="fa fa-plus text-primary me-2"></i>Read More</a>
+                            
 
                         </div>
                     </div>
@@ -407,7 +418,7 @@
                             <h4 class="mb-3">Equipment</h4>
                             <p class="mb-4">Accurate digital tools such as LogTag readers and fogging machines for
                                 monitoring farm conditions and ensuring effective disinfection processes.</p>
-                            <a class="btn btn-sm" href=""><i class="fa fa-plus text-primary me-2"></i>Read More</a>
+                            
 
                         </div>
                     </div>
@@ -646,10 +657,10 @@
 
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-white mb-4">Quick Links</h4>
-                    <a class="btn btn-link" href="">About Us</a>
-                    <a class="btn btn-link" href="">Services</a>
-                    <a class="btn btn-link" href="">Contact Us</a>
-                    <a class="btn btn-link" href="">FAQs</a>
+                    <a class="btn btn-link" href="about.html">About Us</a>
+                    <a class="btn btn-link" href="services.html">Services</a>
+                    <a class="btn btn-link" href="contact.html">Contact Us</a>
+                    <!-- <a class="btn btn-link" href="">FAQs</a> -->
                     <!-- <a class="btn btn-link" href="">Privacy Policy</a> -->
                 </div>
 

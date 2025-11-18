@@ -16,32 +16,41 @@
 }
 
 @media (max-width: 768px) {
-  .navbar-brand img {
-    height: 40px;
-  }
-  .navbar-brand h2 {
-    font-size: 1.1rem;
-  }
+    .navbar-brand img {
+        height: 40px;
+    }
+
+    .navbar-brand h2 {
+        font-size: 1.1rem;
+    }
 }
 
 html {
-  scroll-behavior: smooth; /* enables smooth scrolling */
+    scroll-behavior: smooth;
+    /* enables smooth scrolling */
 }
 
 .bounce-arrow {
-  animation: bounce 1.5s infinite;
+    animation: bounce 1.5s infinite;
 }
 
 @keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
-    transform: translateY(0);
-  }
-  40% {
-    transform: translateY(6px);
-  }
-  60% {
-    transform: translateY(3px);
-  }
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(6px);
+    }
+
+    60% {
+        transform: translateY(3px);
+    }
 }
 
 
@@ -89,7 +98,7 @@ h6,
 .btn {
     transition: .5s;
     font-weight: 500;
-   
+
 }
 
 .btn-primary,
@@ -159,7 +168,7 @@ h6,
 }
 
 @media (max-width: 991.98px) {
-    .navbar .navbar-nav .nav-link  {
+    .navbar .navbar-nav .nav-link {
         margin-right: 0;
         padding: 10px 0;
     }
@@ -186,7 +195,7 @@ h6,
         transition: .5s;
         opacity: 1;
     }
-} 
+}
 
 
 /*** Header ***/
@@ -222,7 +231,7 @@ h6,
         position: relative;
         min-height: 450px;
     }
-    
+
     #header-carousel .carousel-item img {
         position: absolute;
         width: 100%;
@@ -550,4 +559,14 @@ h6,
 
 .copyright a:hover {
     color: var(--primary);
+}
+
+
+.transition-all {
+    transition: all 0.3s ease-in-out;
+}
+
+.transition-all:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
 }

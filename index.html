@@ -108,41 +108,11 @@
                 <a href="products.html" class="nav-item nav-link">Products</a>
                 <a href="services.html" class="nav-item nav-link">Services</a>
                 <a href="contact.html" class="nav-item nav-link">Contact</a>
-                <!-- Button trigger modal -->
-                <button type="button" class="nav-item nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    Staff
+                <!-- Button trigger Staff modal -->
+                <button type="button" class="nav-item nav-link bg-transparent border-0 p-0" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
+                    Staff Links
                 </button>
-
-                <!-- Modal -->
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h1 class="modal-title fs-5" id="exampleModalLabel">Staff Links</h1>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <a class="btn btn-link"
-                                    href="https://docs.google.com/forms/d/e/1FAIpQLSeo2iKHWnmu4X4sM-pj_hC5uAu5Nfv9Zgu2hIHhLO0vBfsUuA/viewform"
-                                    target="blank">Daily Activity Report</a>
-
-                                <a class="btn btn-link"
-                                    href="https://drive.google.com/drive/folders/1fUeDS4nI5XqB3qSjHWcTJTEaic160zpf?usp=drive_link"
-                                    target="blank">Products Price List</a>
-
-                                <a class="btn btn-link" href="https://webmail.eurolivestock.com/" target="blank">Webmail
-                                    Login</a>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Save changes</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
             </div>
 
             <a href="index.html#quote" class="btn btn-primary py-3 px-lg-4 rounded-0 d-none d-lg-block">
@@ -152,6 +122,46 @@
     </nav>
     <!-- Navbar End -->
 
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Staff Links</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="modal-body text-center">
+                        <div class="d-grid gap-3 justify-content-center">
+                            <a class="btn btn-outline-primary mx-auto" style="width: 250px;"
+                                href="https://docs.google.com/forms/d/e/1FAIpQLSeo2iKHWnmu4X4sM-pj_hC5uAu5Nfv9Zgu2hIHhLO0vBfsUuA/viewform"
+                                target="_blank">
+                                📄 Daily Activity Report
+                            </a>
+
+                            <a class="btn btn-outline-primary mx-auto" style="width: 250px;"
+                                href="https://drive.google.com/drive/folders/1fUeDS4nI5XqB3qSjHWcTJTEaic160zpf?usp=drive_link"
+                                target="_blank">
+                                📁 Products Price List
+                            </a>
+
+                            <a class="btn btn-outline-primary mx-auto" style="width: 250px;"
+                                href="https://webmail.eurolivestock.com/" target="_blank">
+                                ✉️ Webmail Login
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End Modal-->
+
 
     <!-- Carousel Start -->
     <div class="container-fluid p-0 wow fadeIn" style="max-height: 450px;" data-wow-delay="0.1s">
@@ -159,7 +169,7 @@
             <div class="carousel-inner">
 
                 <div class="carousel-item active" style="max-height: 450px;">
-                    <img class="w-100" src="img/431.jpg" alt="Image">
+                    <img class="w-100" src="img/poultry/poultry-farm-two.jpg" alt="Image">
                     <div class="carousel-caption">
                         <div class="container">
                             <div class="row justify-content-center">
@@ -185,56 +195,62 @@
     <!-- Top Feature Start -->
     <div class="container-fluid top-feature py-10 pt-lg-0">
         <div class="container py-3 pt-lg-0">
-            <div class="row gx-2">
+            <div class="row gx-4 gy-4">
+
+                <!-- Box 1 -->
                 <div class="col-lg-4 wow fadeIn" data-wow-delay="0.1s">
-                    <div class="bg-white shadow d-flex align-items-center h-100 px-5" style="min-height: 160px;">
-                        <div class="d-flex">
-                            <div class="flex-shrink-0 btn-lg-square rounded-circle bg-light">
-                                <i class="fa fa-tractor text-primary"></i>
-                            </div>
-                            <div class="ps-3">
-                                <h4>Farm Hygiene</h4>
-                                <span>Effective cleaning and disinfection solutions that promote healthier and safer
-                                    poultry environments.</span>
-                            </div>
+                    <div class="feature-box bg-white shadow-sm rounded-3 h-100 p-4 d-flex align-items-start">
+                        <div
+                            class="icon-wrapper rounded-circle bg-light d-flex align-items-center justify-content-center me-3">
+                            <i class="fa fa-tractor text-primary fs-3"></i>
+                        </div>
+                        <div>
+                            <h5 class="mb-2">Farm Hygiene</h5>
+                            <p class="mb-0">
+                                Effective cleaning and disinfection solutions that promote healthier and safer
+                                poultry environments.
+                            </p>
                         </div>
                     </div>
                 </div>
 
+                <!-- Box 2 -->
                 <div class="col-lg-4 wow fadeIn" data-wow-delay="0.3s">
-                    <div class="bg-white shadow d-flex align-items-center h-100 px-5" style="min-height: 160px;">
-                        <div class="d-flex">
-                            <div class="flex-shrink-0 btn-lg-square rounded-circle bg-light">
-                                <i class="fa-solid fa-pump-soap text-primary"></i>
-                            </div>
-                            <div class="ps-3">
-                                <h4>Product Supply</h4>
-                                <span>Providing high-quality disinfectants, sanitizers and farm hygiene products across
-                                    East Africa.</span>
-                            </div>
+                    <div class="feature-box bg-white shadow-sm rounded-3 h-100 p-4 d-flex align-items-start">
+                        <div
+                            class="icon-wrapper rounded-circle bg-light d-flex align-items-center justify-content-center me-3">
+                            <i class="fa-solid fa-pump-soap text-primary fs-3"></i>
+                        </div>
+                        <div>
+                            <h5 class="mb-2">Product Supply</h5>
+                            <p class="mb-0">
+                                Providing high-quality disinfectants, sanitizers and farm hygiene products across
+                                East Africa.
+                            </p>
                         </div>
                     </div>
                 </div>
 
+                <!-- Box 3 -->
                 <div class="col-lg-4 wow fadeIn" data-wow-delay="0.5s">
-                    <div class="bg-white shadow d-flex align-items-center h-100 px-5" style="min-height: 160px;">
-                        <div class="d-flex">
-                            <div class="flex-shrink-0 btn-lg-square rounded-circle bg-light">
-                                <i class="fa fa-phone text-primary"></i>
-                            </div>
-                            <div class="ps-3">
-                                <h4>Consultation</h4>
-                                <span>Professional advice on selecting and applying the right hygiene & disinfection
-                                    solutions for your poultry farm.</span>
-                            </div>
+                    <div class="feature-box bg-white shadow-sm rounded-3 h-100 p-4 d-flex align-items-start">
+                        <div
+                            class="icon-wrapper rounded-circle bg-light d-flex align-items-center justify-content-center me-3">
+                            <i class="fa fa-phone text-primary fs-3"></i>
+                        </div>
+                        <div>
+                            <h5 class="mb-2">Consultation</h5>
+                            <p class="mb-0">
+                                Professional advice on selecting and applying the right hygiene &
+                                disinfection solutions for your poultry farm.
+                            </p>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </div>
-
-
     <!-- Top Feature End -->
 
     <!-- About Start -->
@@ -242,8 +258,7 @@
         <div class="container">
             <div class="row g-5 align-items-end">
                 <div class="col-lg-3 col-md-5 wow fadeInUp" data-wow-delay="0.1s">
-                    <img class="img-fluid rounded" data-wow-delay="0.1s"
-                        src="https://i0.wp.com/afrimash.com/wp-content/uploads/2024/05/Poultry-Farming-Part-3.jpg">
+                    <img class="img-fluid rounded" data-wow-delay="0.1s" src="img/poultry/poultry-farm-two.jpg">
                 </div>
                 <div class="col-lg-6 col-md-7 wow fadeInUp" data-wow-delay="0.3s">
                     <h1 class="display-1 text-primary mb-0">20+</h1>
@@ -285,7 +300,6 @@
     </div>
     <!-- About End -->
 
-
     <!-- Facts Start -->
     <!-- <div class="container-fluid facts my-5 py-5" data-parallax="scroll" data-image-src="img/poultry-farm.jpg">
         <div class="container py-5">
@@ -316,17 +330,9 @@
         <div class="container">
             <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
                 <p class="fs-5 fw-bold text-primary">Our Projects</p>
-                <h1 class="display-5 mb-5">Some Of Our Wonderful Projects</h1>
+                <h1 class="display-5 mb-5">Some Of Our Services</h1>
             </div>
-            <!-- <div class="row wow fadeInUp" data-wow-delay="0.3s">
-                <div class="col-12 text-center">
-                    <ul class="list-inline rounded mb-5" id="portfolio-flters">
-                        <li class="mx-2 active" data-filter="*">All</li>
-                        <li class="mx-2" data-filter=".first">Complete Projects</li>
-                        <li class="mx-2" data-filter=".second">Ongoing Projects</li>
-                    </ul>
-                </div>
-            </div> -->
+
             <div class="row g-4 portfolio-container">
                 <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.1s">
                     <div class="portfolio-inner rounded">
@@ -472,7 +478,7 @@
     <!--Features End-->
 
     <!-- Quote Start -->
-    <div id="quote" class="container-fluid quote my-5 py-5" data-parallax="scroll" data-image-src="img/503.jpg">
+    <div id="quote" class="container-fluid quote my-5 py-5" data-parallax="scroll" data-image-src="img/poultry/poultry-farm-two.jpg">
         <div class="container py-5">
             <div class="row justify-content-center">
                 <div class="col-lg-7">

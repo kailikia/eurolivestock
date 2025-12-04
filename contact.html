@@ -105,6 +105,11 @@
                 <a href="products.html" class="nav-item nav-link">Products</a>
                 <a href="services.html" class="nav-item nav-link">Services</a>
                 <a href="contact.html" class="nav-item nav-link active">Contact</a>
+                <!-- Button trigger Staff modal -->
+                <button type="button" class="nav-item nav-link bg-transparent border-0 p-0" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
+                    Staff Links
+                </button>
             </div>
             <a href="index.html#quote" class="btn btn-primary py-3 px-lg-4 rounded-0 d-none d-lg-block">
                 Get A Quote <i class="fa fa-arrow-right ms-3"></i>
@@ -112,6 +117,46 @@
         </div>
     </nav>
     <!-- Navbar End -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Staff Links</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="modal-body text-center">
+                        <div class="d-grid gap-3 justify-content-center">
+                            <a class="btn btn-outline-primary mx-auto" style="width: 250px;"
+                                href="https://docs.google.com/forms/d/e/1FAIpQLSeo2iKHWnmu4X4sM-pj_hC5uAu5Nfv9Zgu2hIHhLO0vBfsUuA/viewform"
+                                target="_blank">
+                                📄 Daily Activity Report
+                            </a>
+
+                            <a class="btn btn-outline-primary mx-auto" style="width: 250px;"
+                                href="https://drive.google.com/drive/folders/1fUeDS4nI5XqB3qSjHWcTJTEaic160zpf?usp=drive_link"
+                                target="_blank">
+                                📁 Products Price List
+                            </a>
+
+                            <a class="btn btn-outline-primary mx-auto" style="width: 250px;"
+                                href="https://webmail.eurolivestock.com/" target="_blank">
+                                ✉️ Webmail Login
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End Modal-->
 
     <!-- Page Header Start -->
     <div class="container-fluid page-header py-5 mb-2 wow fadeIn" data-wow-delay="0.1s">
@@ -149,30 +194,45 @@
                     </div>
 
                     <h4 class="text-black text-center mb-1">OR</h4>
-                    <form>
-                        <div class="row g-3">
-                            <div class="col-md-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control" id="name" placeholder="Your Name">
-                                    <label for="name">Your Name</label>
-                                </div>
+                    <form id="form" action="https://api.web3forms.com/submit" method="POST">
+                        <div class="mb-3">
+                            <div class="form-floating">
+                                <input type="text" class="form-control bg-light border-0" id="name" name="name"
+                                    placeholder="Name" required>
+                                <label for="name">Your Name</label>
                             </div>
-                            <div class="col-md-6">
-                                <div class="form-floating">
-                                    <input type="email" class="form-control" id="email" placeholder="Your Email">
-                                    <label for="email">Your Email</label>
-                                </div>
+                        </div>
+                        <div class="mb-3">
+                            <div class="form-floating">
+                                <input type="email" class="form-control bg-light border-0" id="email" name="email"
+                                    placeholder="Email" required>
+                                <label for="email">Your Email</label>
                             </div>
-                            <div class="col-12">
-                                <div class="form-floating">
-                                    <textarea class="form-control" placeholder="Your Message" id="message"
-                                        style="height: 100px"></textarea>
-                                    <label for="message">Message</label>
-                                </div>
+                        </div>
+                        <div class="mb-3">
+                            <div class="form-floating">
+                                <input type="text" class="form-control bg-light border-0" id="mobile" name="mobile"
+                                    placeholder="Mobile">
+                                <label for="mobile">Your Mobile</label>
                             </div>
-                            <div class="col-12">
-                                <button class="btn btn-primary py-3 px-4" type="submit">Send Message</button>
+                        </div>
+                        <div class="mb-3">
+                            <div class="form-floating">
+                                <input type="text" class="form-control bg-light border-0" id="service" name="service"
+                                    placeholder="Service">
+                                <label for="service">Service Type</label>
                             </div>
+                        </div>
+                        <div class="mb-3">
+                            <div class="form-floating">
+                                <textarea class="form-control bg-light border-0"
+                                    placeholder="Leave a message here" id="message"
+                                    style="height: 100px"></textarea>
+                                <label for="message">Message</label>
+                            </div>
+                        </div>
+                        <div class="col-12 text-center">
+                            <button class="btn btn-primary py-3 px-4" type="submit">Send Email</button>
                         </div>
                     </form>
                 </div>

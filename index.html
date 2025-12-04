@@ -162,12 +162,10 @@
     </div>
     <!--End Modal-->
 
-
     <!-- Carousel Start -->
     <div class="container-fluid p-0 wow fadeIn" style="max-height: 450px;" data-wow-delay="0.1s">
         <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
-
                 <div class="carousel-item active" style="max-height: 450px;">
                     <img class="w-100" src="img/poultry/poultry-farm-two.jpg" alt="Image">
                     <div class="carousel-caption">
@@ -176,12 +174,11 @@
                                 <div class="col-lg-8">
                                     <h2 class="display-3 text-white mb-5 animated slideInDown">Cleaning & Disinfection —
                                         Leave it to us</h2>
-                                    <a href="#services"
+                                    <a href="services.html"
                                         class="btn btn-primary py-3 px-4 align-items-center justify-content-center">
                                         Explore More
                                         <i class="fa fa-arrow-down ms-2 bounce-arrow"></i>
                                     </a>
-
                                 </div>
                             </div>
                         </div>
@@ -280,7 +277,7 @@
                                 <h4 class="mb-3">Expert Services</h4>
                                 <span> We provide professional poultry farm hygiene and disinfection services using
                                     trusted
-                                    methods and products to ensure safe and productive environments.</span>
+                                    methods and products to ensure safe and productive poultry environments.</span>
 
                             </div>
                         </div>
@@ -330,7 +327,7 @@
         <div class="container">
             <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
                 <p class="fs-5 fw-bold text-primary">Our Projects</p>
-                <h1 class="display-5 mb-5">Some Of Our Services</h1>
+                <h1 class="display-5 mb-5">Some Of Our Wonderful Projects</h1>
             </div>
 
             <div class="row g-4 portfolio-container">
@@ -429,9 +426,8 @@
                     <p class="fs-5 fw-bold text-primary">Why Choose Us</p>
                     <h1 class="display-5 mb-4">Trusted Partner in Farm Hygiene Products</h1>
                     <p class="mb-4">EuroLivestock Products is committed to providing high-quality disinfectants,
-                        sanitizers, and
-                        farm hygiene solutions backed by expert support, ensuring cleaner farms and healthier livestock
-                        across East Africa.</p>
+                        sanitizers, and poultry farm hygiene solutions backed by expert support, ensuring cleaner and
+                        healthier poultry farms across East Africa.</p>
 
                     <a class="btn btn-primary py-3 px-4" href="products.html">Explore Products</a>
                 </div>
@@ -478,7 +474,8 @@
     <!--Features End-->
 
     <!-- Quote Start -->
-    <div id="quote" class="container-fluid quote my-5 py-5" data-parallax="scroll" data-image-src="img/poultry/poultry-farm-two.jpg">
+    <div id="quote" class="container-fluid quote my-5 py-5" data-parallax="scroll"
+        data-image-src="img/poultry/poultry-farm-two.jpg">
         <div class="container py-5">
             <div class="row justify-content-center">
                 <div class="col-lg-7">
@@ -499,50 +496,50 @@
                         <h4 class="text-black text-center mb-1">OR</h4>
 
                         <div class="row g-3">
-                            <h3 class="text-black text-center mb-2"></h3>
-                            <div class="col-sm-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control bg-light border-0" id="gname"
-                                        placeholder="Gurdian Name">
-                                    <label for="gname">Your Name</label>
+                            <form id="form" action="https://api.web3forms.com/submit" method="POST">
+                                <div class="mb-3">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control bg-light border-0" id="name" name="name"
+                                            placeholder="Name" required>
+                                        <label for="name">Your Name</label>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-floating">
-                                    <input type="email" class="form-control bg-light border-0" id="gmail"
-                                        placeholder="Gurdian Email">
-                                    <label for="gmail">Your Email</label>
+                                <div class="mb-3">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control bg-light border-0" id="email" name="email"
+                                            placeholder="Email" required>
+                                        <label for="email">Your Email</label>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control bg-light border-0" id="cname"
-                                        placeholder="Child Name">
-                                    <label for="cname">Your Mobile</label>
+                                <div class="mb-3">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control bg-light border-0" id="mobile" name="mobile"
+                                            placeholder="Mobile">
+                                        <label for="mobile">Your Mobile</label>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control bg-light border-0" id="cage"
-                                        placeholder="Child Age">
-                                    <label for="cage">Service Type</label>
+                                <div class="mb-3">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control bg-light border-0" id="service" name="service"
+                                            placeholder="Service">
+                                        <label for="service">Service Type</label>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-floating">
-                                    <textarea class="form-control bg-light border-0" placeholder="Leave a message here"
-                                        id="message" style="height: 100px"></textarea>
-                                    <label for="message">Message</label>
+                                <div class="mb-3">
+                                    <div class="form-floating">
+                                        <textarea class="form-control bg-light border-0"
+                                            placeholder="Leave a message here" id="message"
+                                            style="height: 100px"></textarea>
+                                        <label for="message">Message</label>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-12 text-center">
-                                <button class="btn btn-primary py-3 px-4" type="submit">Send Email</button>
-                            </div>
-
+                                <div class="col-12 text-center">
+                                    <button class="btn btn-primary py-3 px-4" type="submit">Send Email</button>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>

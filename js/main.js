@@ -113,3 +113,13 @@ form.addEventListener('submit', async (e) => {
         submitBtn.disabled = false;
     }
 });
+
+// Load YouTube API
+var tag = document.createElement('script');
+tag.src = "https://www.youtube.com/iframe_api";
+document.body.appendChild(tag);
+var player;
+function onYouTubeIframeAPIReady() { player = new YT.Player('ytplayer'); }
+function unmuteVideo() {
+    if (player) { player.unMute(); }
+}
